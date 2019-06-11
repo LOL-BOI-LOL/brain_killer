@@ -19,7 +19,9 @@ function getRandomColor1() {
 	document.body.style.backgroundColor = color;
 }
 	
-function getRandomColor() {	
+function getRandomColor() {
+  var element = document.getElementById("ass");
+  element.parentNode.removeChild(element);
   setInterval(getRandomColor1, 1);
 }
 
