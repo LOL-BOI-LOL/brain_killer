@@ -22,6 +22,8 @@ function getRandomColor() {
 function getRandomColor1() {
   var element = document.getElementById("ass");
   element.parentNode.removeChild(element);
+  var element2 = document.getElementById("ass2");
+  element2.parentNode.removeChild(element2);
   setInterval(getRandomColor, 1);
 }
 function getRandomColor2() { 
@@ -36,7 +38,7 @@ function getRandomColor4() {
   var element = document.getElementById("ass");
   element.parentNode.removeChild(element);
   var element2 = document.getElementById("ass2");
-  element.parentNode.removeChild(element);
+  element2.parentNode.removeChild(element2);
   setInterval(getRandomColor2, 5);
   delay = 2;
   setInterval(getRandomColor3, 5);
