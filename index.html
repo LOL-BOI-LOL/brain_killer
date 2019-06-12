@@ -32,7 +32,6 @@ function getRandomColor2() {
   var color = "#000000";
   var color2 = "#ffffff";
   document.body.style.backgroundColor = color;
-  delay = 1;
   document.body.style.backgroundColor = color2;
 }
   
@@ -41,9 +40,7 @@ function getRandomColor4() {
   element.parentNode.removeChild(element);
   var element2 = document.getElementById("ass2");
   element2.parentNode.removeChild(element2);
-  while(1==1) {
-   getRandomColor2();
-  }
+  setInterval(getRandomColor2, 1);
 }
 </script>
 	
