@@ -10,7 +10,7 @@
 
 <script>
 
-function getRandomColor1() { 
+function getRandomColor() { 
 	var letters = '0123456789ABCDEF';
 	var color = '#';
 	for (var i = 0; i < 6; i++) {
@@ -19,17 +19,33 @@ function getRandomColor1() {
 	document.body.style.backgroundColor = color;
 }
 	
-function getRandomColor() {
+function getRandomColor1() {
   var element = document.getElementById("ass");
   element.parentNode.removeChild(element);
-  setInterval(getRandomColor1, 1);
+  setInterval(getRandomColor, 1);
 }
-
+function getRandomColor2() { 
+  var color = "#000000";
+  document.body.style.backgroundColor = color;
+}
+function getRandomColor3() { 
+  var color = "#ffffff";
+  document.body.style.backgroundColor = color;
+}	  
+function getRandomColor4() { 
+  var element = document.getElementById("ass");
+  element.parentNode.removeChild(element);
+  setInterval(getRandomColor2, 5);
+  delay = 2;
+  setInterval(getRandomColor3, 5);
+}
 </script>
 
 <body>
 
-<input type="button" onclick="getRandomColor()" value="" id="ass">
+<input type="button" onclick="getRandomColor1()" value="All Colors" id="ass">
+	
+<input type="button" onclick="getRandomColor4()" value="Black and White" id="ass2">
 
 </body>
 
