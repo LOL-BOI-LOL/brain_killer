@@ -30,19 +30,20 @@ function getRandomColor1() {
 }
 function getRandomColor2() { 
   var color = "#000000";
+  var color2 = "#ffffff";
   document.body.style.backgroundColor = color;
+  delay = 1;
+  document.body.style.backgroundColor = color2;
 }
-function getRandomColor3() { 
-  var color = "#ffffff";
-  document.body.style.backgroundColor = color;
-}	  
+  
 function getRandomColor4() { 
   var element = document.getElementById("ass");
   element.parentNode.removeChild(element);
   var element2 = document.getElementById("ass2");
   element2.parentNode.removeChild(element2);
-  setInterval(getRandomColor2, 1);
-  setInterval(getRandomColor3, 2);
+  while(1==1) {
+   getRandomColor2();
+  }
 }
 </script>
 	
